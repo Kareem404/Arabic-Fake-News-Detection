@@ -73,4 +73,7 @@ The loss curve is shown curve is shown here:
 
 ![alt text](figs/loss%20curve.png)
 
-As seen, the model has not converged yet which means it is possible to have a better preforming model if training was contunied. However, due to limited compute resources, we had to stop here
+As seen, the model has not converged yet which means it is possible to have a better preforming model if training was contunied. However, due to limited compute resources, we had to stop here.
+
+# 👨‍💻 4. Website
+To be available soon!
