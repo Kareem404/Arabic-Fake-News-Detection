@@ -1,1 +1,1 @@
-# Make sure to have downloaded the dataset and have placed it in this directory
+Download the dataset from this [link](https://www.kaggle.com/datasets/murtadhayaseen/arabic-fake-news-dataset-afnd)
