@@ -77,7 +77,7 @@ def get_lora_model(model_name = 'aubmindlab/bert-base-arabertv02'):
 def train_model(model):
     training_args = TrainingArguments(output_dir="./Split_test/results", 
                                   eval_strategy="epoch",
-                                  num_train_epochs=1, # 8
+                                  num_train_epochs=8, # 8
                                   per_device_train_batch_size=16)
     
     arabert_tokenizer = AutoTokenizer.from_pretrained('aubmindlab/bert-base-arabertv02')
