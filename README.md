@@ -30,19 +30,19 @@ AFND
 ```
 
 ### 2.2 Install Dependencies
-First, run this command `pip install -r requirements.txt`. This installs all the required dependencies excluding PyTorch because we are going to use a GPU-enabled version. To install Pytorch, run this command: 
+First, run this command ```pip install -r requirements.txt```. This installs all the required dependencies excluding PyTorch because we are going to use a GPU-enabled version. To install Pytorch, run this command: 
 
-`pip install torch==2.5.1+cu121 -f https://download.pytorch.org/whl/torch_stable.html`
+```pip install torch==2.5.1+cu121 -f https://download.pytorch.org/whl/torch_stable.html```
 
 Please note that this will not work if you do not have the correct CUDA version. 
 
 ### 2.3 Preproccess/Tokenize Dataset
-To be able to run our model, we need to first tokenize the dataset. To do so, run `python preproccess.py`. The `preproccess.py` script creates a new directory `./Split` which containes a tokenized version of the dataset saved as a bunch of `.pt` tensors. The directory contains training and testing splits saved as tokenized tensors. This is done individually for the "text" feature and the "title" feature. Note in our model, we only use the "text" feature.
+To be able to run our model, we need to first tokenize the dataset. To do so, run ````python preproccess.py````. The ```preproccess.py``` script creates a new directory `./Split` which containes a tokenized version of the dataset saved as a bunch of `.pt` tensors. The directory contains training and testing splits saved as tokenized tensors. This is done individually for the "text" feature and the "title" feature. Note in our model, we only use the "text" feature.
 
 ⚠️ This script **SHOULD** only be ran once.
 
 ### 2.4 Fine-tune AraBERTv02
-To train the model, run `python train.py`. The script by default will run the model for 8 epochs with a batch size of 16. To change this, modify `TrainingArguments` in the `train.py` file:
+To train the model, run ```python train.py```. The script by default will run the model for 8 epochs with a batch size of 16. To change this, modify `TrainingArguments` in the `train.py` file:
 
 ```
 TrainingArguments(output_dir="./Split_test/results", 
