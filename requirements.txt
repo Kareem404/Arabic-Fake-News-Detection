@@ -1,0 +1,6 @@
+pandas==2.2.2
+numpy==1.26.4
+matplotlib==3.9.2
+scikit-learn==1.5.1
+arabert==1.0.1
+transformers==4.43.4
