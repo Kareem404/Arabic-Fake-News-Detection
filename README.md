@@ -57,6 +57,7 @@ The script also checkpoints every specific amount of steps of running the model.
 # 📈 3. Evaluation
 To the best of our knowledge, the results obtained by our model are the best using the dataset! The confusion matrix is shown by this figure:
 
+![alt text](figs/confusion%20matrix.png)
 
 The classification report is shown by this table: 
 <center>
@@ -70,5 +71,6 @@ The classification report is shown by this table:
 
 The loss curve is shown curve is shown here:
 
+![alt text](figs/loss%20curve.png)
 
 As seen, the model has not converged yet which means it is possible to have a better preforming model if training was contunied. However, due to limited compute resources, we had to stop here
