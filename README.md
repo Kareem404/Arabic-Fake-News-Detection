@@ -1,5 +1,5 @@
 # Arabic Fake News Detection
-🚀 In the repo, we present the code for training a fake news detection model using the [AFND dataset](https://www.kaggle.com/datasets/murtadhayaseen/arabic-fake-news-dataset-afnd). 
+🚀 In the repo, we present the code for training a fake news detection model using the [AFND dataset](https://www.kaggle.com/datasets/murtadhayaseen/arabic-fake-news-dataset-afnd). The model is given an Arabic article in text and returns whether an article came from a credible source or not. 
 
 ## 1. 🤖 Model Description
 We fine-tuned the AraBERTv02 pretrained transformer using Low-Rank Adaptation (LoRA). The reason LoRA was used is because we did not have enough compute to run fully fine-tune the model.
