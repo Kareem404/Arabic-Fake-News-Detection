@@ -75,5 +75,28 @@ The loss curve is shown curve is shown here:
 
 As seen, the model has not converged yet which means it is possible to have a better preforming model if training was contunied. However, due to limited compute resources, we had to stop here.
 
-# 👨‍💻 4. Website
-To be available soon!
+# 👨‍💻 4. API
+A simple API and client application was made to better showcase the model. The API was created using [FastAPI](https://fastapi.tiangolo.com/). The API was then deployed using Docker (🐋) and Microsoft Azure ACI's service. The container was made public in dockerhub and is available in this [link](https://hub.docker.com/repository/docker/karim129/afnd/general). Feel free to pull it and run the API locally using `docker pull karim129/afnd:latest`. After pulling the repo, you could run it locally using `docker run --name afnd -p 8001:80 karim129/afnd:latest`. The API will be available at `http://localhost:8001`. 
+
+The code for the API is available in this directory `./API`. In the `./API` directory we should have another folder that is a model checkpoint `./ckpt`. You can extract this folder after the `./train.py` file was ran. The folder structure of `./ckpt` should be as follows:
+```
+./ckpt
+│   adapter_config.json
+│   adapter_model.safetensors
+│   optimizer.pt
+│   rng_state.pth
+│   scheduler.pt
+│   trainer_state.JSON
+│   training_args.bin
+```
+To access the API (if it is still running ;/), use the following link: `http://4.239.91.120`. You can access the documentation in this route `./docs`.
+
+The client application is available at this [URL](https://kmvx1.pythonanywhere.com/).
+
+# 📝 5. Citations
+@inproceedings{antoun2020arabert,
+  title={AraBERT: Transformer-based Model for Arabic Language Understanding},
+  author={Antoun, Wissam and Baly, Fady and Hajj, Hazem},
+  booktitle={LREC 2020 Workshop Language Resources and Evaluation Conference 11--16 May 2020},
+  pages={9}
+}
