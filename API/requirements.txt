@@ -1,0 +1,6 @@
+fastapi[standard]==0.115.5
+pydantic==2.9.2
+transformers==4.43.4
+torch==2.5.1
+arabert==1.0.1
+peft==0.13.2
