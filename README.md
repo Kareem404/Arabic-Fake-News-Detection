@@ -1,4 +1,4 @@
-# Arabic Fake News Detection
+# Arabic News Credibility Checker
 🚀 In the repo, we present the code for training a fake news detection model using the [AFND dataset](https://www.kaggle.com/datasets/murtadhayaseen/arabic-fake-news-dataset-afnd). The model is given an Arabic article in text and returns whether an article came from a credible source or not. 
 
 ## 1. 🤖 Model Description
